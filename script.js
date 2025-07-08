@@ -12,3 +12,12 @@ function newWhisper() {
   const random = whispers[Math.floor(Math.random() * whispers.length)];
   quote.textContent = random;
 }
+// script.js ထဲမှာ ဒီ function ကိုထပ်ထည့်ပါ
+function toggleMusic() {
+  const music = document.getElementById("bgMusic");
+  if (music.paused) {
+    music.play();
+  } else {
+    music.pause();
+  }
+}
